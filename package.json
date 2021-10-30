@@ -22,13 +22,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "ghinit": "curl https://raw.githubusercontent.com/braveryk7/GitHooks/main/conf/init.sh > init.sh && sh init.sh",
-    "postinstall": "npm run ghinit"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "postinstall": "npm run ghinit",
+    "lint": "node_modules/.bin/eslint src/"
   },
   "browserslist": {
     "production": [
