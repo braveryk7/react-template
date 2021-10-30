@@ -7,6 +7,7 @@ extends:
   - 'plugin:react/recommended'
   - 'airbnb'
   - 'airbnb-typescript'
+  - prettier
 parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaFeatures:
@@ -19,3 +20,6 @@ plugins:
   - '@typescript-eslint'
   - import
 root: true
+rules:
+  import/prefer-default-export: off
+  react/react-in-jsx-scope: off
